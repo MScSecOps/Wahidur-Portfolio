@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wahidur Rahman | Cybersecurity Professional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', sans-serif; background: #0d1117; color: #f0f0f0; line-height: 1.6; }
+    a { color: #00bcd4; text-decoration: none; transition: color 0.3s; }
+    a:hover { color: #1de9b6; }
+    header {
+      background: url('https://images.unsplash.com/photo-1610484826917-99b2acbc33b8?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    header h1 { font-size: 2.8rem; text-shadow: 1px 1px 6px #000; transition: transform 0.3s ease; }
+    header h1:hover { transform: scale(1.05); }
+    header p { font-size: 1.3rem; margin-top: 0.5rem; color: #ccc; text-shadow: 1px 1px 3px #000; }
+    nav { background: #12141b; padding: 1rem; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.4); position: sticky; top: 0; z-index: 999; }
+    nav a { margin: 0 1rem; color: #ccc; font-weight: 600; position: relative; padding-bottom: 0.25rem; }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background-color: #00bcd4;
+      transition: all 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+    .container { max-width: 960px; margin: 2rem auto; padding: 1rem; }
+    section { margin-bottom: 4rem; transition: all 0.5s ease-in-out; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; color: #00bcd4; }
+    .about, .skills, .portfolio, .contact, .cv, .blog {
+      background: #1c1f26;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .about:hover, .skills:hover, .portfolio:hover, .contact:hover, .cv:hover, .blog:hover {
+      transform: scale(1.01);
+    }
+    .skills .bar { background: #2a2f3a; border-radius: 30px; overflow: hidden; margin-bottom: 1rem; }
+    .skills .bar span {
+      display: block;
+      padding: 0.5rem;
+      background: #00bcd4;
+      color: #000;
+      font-weight: bold;
+      transition: width 1s ease-out;
+    }
+    .project-placeholder {
+      background: url('https://images.unsplash.com/photo-1624378433337-d00b172bdc50?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      padding: 4rem;
+      border-radius: 12px;
+      color: #ddd;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      background: #2a2f3a;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      transition: 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 8px #00bcd4;
+    }
+    input[type="submit"] {
+      background: #00bcd4;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    input[type="submit"]:hover {
+      background: #0097a7;
+    }
+    .blog-post {
+      background: #2a2f3a;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 4px solid #00bcd4;
+      border-radius: 6px;
+      transition: transform 0.3s;
+    }
+    .blog-post:hover { transform: translateX(5px); }
+    .cv a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #00bcd4;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cv a:hover {
+      background: #0097a7;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      background: #1f222a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wahidur Rahman</h1>
+    <p>Ethical Hacker / Cybersecurity Professional</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I'm Wahidur Rahman, a cybersecurity professional with expertise in Web Application Penetration Testing, Application Security, Network Penetration Testing, Digital Forensics, Linux Administration, Windows Server Administration, OSINT, Cloud Security, and Security Operations (SOC). I'm proficient in languages like Python, Bash, C/C++, and Web Technologies. I help individuals and organizations safeguard their online presence and protect against emerging threats.</p>
+    </section>
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="bar"><span style="width: 70%;">Python - 70%</span></div>
+      <div class="bar"><span style="width: 80%;">Bash - 80%</span></div>
+      <div class="bar"><span style="width: 85%;">Web App Penetration Testing - 85%</span></div>
+      <div class="bar"><span style="width: 80%;">Application Security - 80%</span></div>
+      <div class="bar"><span style="width: 75%;">Network Penetration Testing - 75%</span></div>
+      <div class="bar"><span style="width: 70%;">Digital Forensics - 70%</span></div>
+      <div class="bar"><span style="width: 80%;">Linux Administration - 80%</span></div>
+      <div class="bar"><span style="width: 70%;">Windows Server Admin - 70%</span></div>
+      <div class="bar"><span style="width: 80%;">OSINT - 80%</span></div>
+      <div class="bar"><span style="width: 65%;">Cloud Security - 65%</span></div>
+      <div class="bar"><span style="width: 75%;">SOC Operations - 75%</span></div>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="project-placeholder">
+        <p>Projects will be added soon.</p>
+      </div>
+    </section>
+    <section id="blog" class="blog">
+      <h2>Cybersecurity Blog</h2>
+      <div class="blog-post"><strong>Top 5 Common Cybersecurity Mistakes to Avoid</strong></div>
+      <div class="blog-post"><strong>How Hackers Exploit Weak Web Applications</strong></div>
+      <div class="blog-post"><strong>OSINT Techniques for Investigations</strong></div>
+      <div class="blog-post"><strong>Understanding Modern Malware and Viruses</strong></div>
+      <div class="blog-post"><strong>Security Awareness: The Human Factor in Cybersecurity</strong></div>
+    </section>
+    <section id="cv" class="cv">
+      <h2>Download My CV</h2>
+      <p>Click below to download my resume.</p>
+      <a href="cv-placeholder.pdf" download>Download CV</a>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:whitejoker040@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+      <p style="margin-top:1rem;">Or reach me on:
+        <br>
+        <a href="https://www.linkedin.com/in/wahidur-rahman-635a991b2/" target="_blank">LinkedIn</a> |
+        <a href="https://www.facebook.com/share/1FDneyhaSr/" target="_blank">Facebook</a>
+      </p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Wahidur Rahman. All rights reserved.
+  </footer>
+</body>
+</html>
